@@ -29,7 +29,7 @@ body {
   .home-text {
     max-width: 50%;
     padding: 100px;
-    margin-left: 150px;
+    margin-left: 100px;
   }
   
   .home-text p {
@@ -94,13 +94,14 @@ body {
   @media (max-width: 1024px) {
     .home {
       flex-direction: column;
-      padding: 20px; /* Reduce el padding para pantallas pequeñas */
-      margin-left: 50px;
+      align-items: center;
+      margin-left: 0;
     }
     .home-text {
       max-width: 90%;
-      text-align: center;
+      text-align: left;
       padding-right: 0;
+      padding: 20px;
       margin-bottom: 20px;
       margin-left: 0px;
     }
@@ -122,6 +123,11 @@ body {
   }
   
   @media (max-width: 480px) {
+    .home{
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
     .home-text h1 {
       font-size: 2rem;
     }
