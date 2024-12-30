@@ -1,0 +1,138 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que los paddings no causen desbordamiento */
+    overflow-x: hidden; /* Evita desbordamiento horizontal */
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit; /* Propaga el box-sizing */
+  }
+  
+  .home {
+    max-width: 100%; /* Evita que exceda el ancho de la pantalla */
+    min-height: 100vh;
+    padding: 50px; /* Márgenes internos */
+    padding-top: 150px;
+    background-color: #f0f0f0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    gap: 40px;
+    margin: 0 auto; /* Centra el contenido */
+  }
+  
+  .home-text {
+    max-width: 50%;
+    padding: 100px;
+    margin-left: 150px;
+  }
+  
+  .home-text p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .home-text h1 {
+    font-size: 3.5rem;
+    color: #333;
+    margin: 15px 0;
+  }
+  
+  .home-text h3 {
+    font-size: 1.8rem;
+    color: #f74780;
+    margin-bottom: 30px;
+  }
+  
+  .hire-me-btn {
+    background-color: #f74780;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hire-me-btn:hover {
+    background-color: #fc6998;
+  }
+  
+  .home-image {
+    position: relative;
+    max-width: 40%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+    padding: 0px;
+    border: 2px solid rgba(252, 105, 152, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .home-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  image{
+    display: flex;
+    justify-content: right;
+  }
+  
+  /* Consultas de medios */
+  @media (max-width: 1024px) {
+    .home {
+      flex-direction: column;
+      padding: 20px; /* Reduce el padding para pantallas pequeñas */
+      margin-left: 50px;
+    }
+    .home-text {
+      max-width: 90%;
+      text-align: center;
+      padding-right: 0;
+      margin-bottom: 20px;
+      margin-left: 0px;
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+    .home {
+      padding: 10px; /* Ajusta el espacio interno */
+    }
+    .home-text h1 {
+      font-size: 2.5rem;
+    }
+    .home-text p {
+      font-size: 1rem;
+      margin-left: 0px;
+    }
+   
+  }
+  
+  @media (max-width: 480px) {
+    .home-text h1 {
+      font-size: 2rem;
+    }
+    .home-text p {
+      font-size: 0.9rem;
+      margin-left: 0px;
+    }
+    .home-image {
+      max-width: 90%;
+    }
+    .home-text{
+      margin-left: 0px;
+    }
+  }

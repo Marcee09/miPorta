@@ -1,0 +1,199 @@
+/* Main About Section */
+.about-section {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 40px;
+    background-color: #f0f0f0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  /* About Title */
+  .about-title {
+    font-size: 2.5rem; 
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Main Content Layout */
+  .about-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Photo Styles */
+  .about-photo {
+    flex: 0 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .about-photo img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    border: 4px solid rgba(252, 105, 152, 0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Text Content Styles */
+  .about-text {
+    flex: 1;
+    color: #333;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .about-text .highlight {
+    color: #f74780;
+    font-weight: bold;
+  }
+  
+  /* Unified Card Container */
+  .about-container {
+    max-width: 1200px;
+    width: 100%;
+    background: #f0f0f0;;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Section Styles */
+  .section {
+    padding: 1.5rem;
+    position: relative;
+  }
+  
+  /* Add dividers between sections */
+  .section:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 20px;
+    bottom: 20px;
+    width: 2px;
+    background-color: rgba(105, 152, 252, 0.5);;
+  }
+  
+  .section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  /* Scrollable Content */
+  .scrollable {
+    overflow-y: auto;
+    max-height: 200px;
+    padding-right: 0.5rem;
+  }
+  
+  .scrollable p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Scrollbar Styles */
+  .scrollable::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollable::-webkit-scrollbar-thumb {
+    background-color: rgba(105, 152, 252, 0.5);
+    border-radius: 4px;
+  }
+  
+  .scrollable::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(50, 114, 252, 0.5);
+  }
+  
+  /* Background Shapes */
+  .background-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .background-shapes .shape {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(252, 105, 152, 0.5);
+    border-radius: 50%;
+    animation: moveShapes 8s infinite ease-in-out;
+    z-index: 0;
+  }
+  
+  .background-shapes .shape.triangle {
+    width: 0;
+    height: 0;
+    background: none;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgba(252, 105, 152, 0.5);
+  }
+  
+  .background-shapes .shape.square {
+    width: 80px;
+    height: 80px;
+    background: rgba(105, 152, 252, 0.5);
+    border-radius: 10%;
+  }
+  
+  /* Animation */
+  @keyframes moveShapes {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    35% { transform: translate(80px, -80px) rotate(45deg); }
+    50% { transform: translate(-30px, 40px) rotate(90deg); }
+    75% { transform: translate(30px, 50px) rotate(135deg); }
+    100% { transform: translate(0, 0) rotate(180deg); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-photo {
+      flex: 0 0 auto;
+      margin-bottom: 20px;
+    }
+  
+    .about-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .section:not(:last-child)::after {
+      width: 100%;
+      height: 1px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      top: auto;
+    }
+  }

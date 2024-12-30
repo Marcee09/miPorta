@@ -1,0 +1,42 @@
+/* Estilo para el footer */
+footer {
+    background-color: #f74780;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Estilo para los iconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #fc6998;
+}
+
+/* Agregar media query para responsive */
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icon {
+        font-size: 1.8rem;
+    }
+}

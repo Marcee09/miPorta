@@ -1,0 +1,95 @@
+/* Estilo para la sección de contacto */
+.contact {
+    width: 100vw;
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #f0f0f0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Estilo para el formulario */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f74780; /* Borde rosado al enfocar */
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Permite redimensionar el área de texto verticalmente */
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: #f74780;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #fc6998;
+}
+
+/* Estilo responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 30px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+
+    .contact-form button {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,93 @@
+/* Estilo general para la sección de servicios */
+.services {
+    width: 100vw;
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #f0f0f0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.services h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 30px;
+    
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Estilo para cada servicio */
+.service-item {
+    background-color: white;
+    padding: 30px;
+    width: 220px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-clip: padding-box; /* Asegura que el borde se ve bien */
+    border: 2px solid transparent; /* Bordes transparentes para aplicar el degradado */
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(45deg, #f74780, #fc6998); /* Borde degradado */
+    background-origin: border-box; /* Hace que el degradado solo se vea en el borde */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    font-size: 3.5rem;
+    color: #f74780;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.service-item:hover .service-icon {
+    color: #fc6998;
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilo responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    
+}
