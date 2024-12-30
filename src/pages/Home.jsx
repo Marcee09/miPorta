@@ -16,8 +16,9 @@ const Home = () => {
         <img src={profileImage} alt="Marcela Herrera" />
         <div className="background-shapes">
           <div className="shape circle"></div>
-          <div className="shape triangle"></div>
-          <div className="shape square"></div>
+          <div className="shape circle"></div>
+          <div className="shape circle"></div>
+          <div className="shape circle"></div>
         </div>
       </div>
     </section>

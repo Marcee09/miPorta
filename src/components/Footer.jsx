@@ -4,18 +4,18 @@ import './Footer.css';
 const Footer = () => {
     return (
         <footer className="footer">
-            <p>&copy; 2024 Mi Portafolio</p>
+            <p>&copy; 2025 Mi Portafolio</p>
             <div className="social-icons">
-                <a href="https://github.com/tu-github" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Marcee09" target="_blank" rel="noopener noreferrer">
                     <FaGithub className="social-icon" />
                 </a>
-                <a href="https://www.linkedin.com/in/tu-linkedin" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/marcela-herrera-03a6a322a/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin className="social-icon" />
                 </a>
-                <a href="https://www.instagram.com/tu-instagram" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/marceeherrer4" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="social-icon" />
                 </a>
-                <a href="mailto:tu-email@gmail.com" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:marcela.ah96@gmail.com" target="_blank" rel="noopener noreferrer">
                     <FaEnvelope className="social-icon" />
                 </a>
             </div>

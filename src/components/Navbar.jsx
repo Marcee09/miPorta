@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import cvFile from '../assets/CvHM.pdf';
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,7 +34,13 @@ const Navbar = () => {
           <li><a href="#contact-section" onClick={(e) => handleScroll(e, 'contact-section')}>Contact</a></li>
         </ul>
       </nav>
-      <button className="cta-btn">Download CV</button>
+      <a className="cta-btn"
+            href={cvFile}
+            download="Marcela_Herrera_CV.pdf"
+          >
+            Descargar CV
+</a>
+
     </header>
   );
 };
