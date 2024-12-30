@@ -5,18 +5,18 @@ const Projects = () => {
   const projectList = [
     {
       id: 1,
-      title: 'Calculadora de redes',
-      description: 'A responsive weather app built with React and OpenWeather API.',
+      title: 'Network Calculator',
+      description: 'A responsive network calculator built with React.',
     },
     {
       id: 2,
-      title: 'Sistema de tickets',
-      description: 'My personal portfolio website showcasing my projects and skills.',
+      title: 'Ticketing System',
+      description: 'Administration and inventory management through a ticketing system.',
     },
     {
       id: 3,
-      title: 'Tienda online',
-      description: 'A fully functional e-commerce website using Node.js and MongoDB.',
+      title: 'Raffles',
+      description: 'Random raffle generation for different types.',
     },
   ];
 
@@ -39,3 +39,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

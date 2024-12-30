@@ -12,7 +12,7 @@
 }
 
 .services h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #333;
     margin-bottom: 30px;
     
@@ -84,9 +84,17 @@
         align-items: center;
     }
 
+    .services h2{
+        font-size: 1.7rem;
+    }
+
     .service-item {
         width: 80%;
         margin-bottom: 30px;
+    }
+
+    .service-item h3{
+        font-size: 1.2rem;
     }
 
     

@@ -4,27 +4,27 @@ import "./Services.css";
 const Services = () => {
     return (
         <section className="services" id="services-section">
-            <h2>Mis Servicios</h2>
+            <h2>My Services</h2>
             <div className="services-container">
                 <div className="service-item">
                     <FaCode className="service-icon" />
-                    <h3>Desarrollo Web</h3>
-                    <p>Creo sitios web rápidos, responsivos y optimizados para una experiencia de usuario excepcional.</p>
+                    <h3>Web Development</h3>
+                    <p>I create fast, responsive, and optimized websites for an exceptional user experience.</p>
                 </div>
                 <div className="service-item">
                     <FaBrush className="service-icon" />
-                    <h3>Diseño UX/UI</h3>
-                    <p>Diseño interfaces atractivas y funcionales que ayudan a crear una experiencia intuitiva y agradable.</p>
+                    <h3>UX/UI Design</h3>
+                    <p>I design attractive and functional interfaces that help create an intuitive and enjoyable experience.</p>
                 </div>
                 <div className="service-item">
                     <FaMobileAlt className="service-icon" />
-                    <h3>Desarrollo Móvil</h3>
-                    <p>Desarrollo aplicaciones móviles para plataformas iOS y Android con un enfoque en la optimización de rendimiento.</p>
+                    <h3>Mobile Development</h3>
+                    <p>I develop mobile applications for iOS and Android platforms with a focus on performance optimization.</p>
                 </div>
                 <div className="service-item">
                     <FaDatabase className="service-icon" />
-                    <h3>Base de Datos</h3>
-                    <p>Diseño y gestión de bases de datos eficientes, seguras y escalables para soportar grandes volúmenes de información.</p>
+                    <h3>Database Management</h3>
+                    <p>I design and manage efficient, secure, and scalable databases to support large volumes of information.</p>
                 </div>
             </div>
         </section>

@@ -26,13 +26,14 @@ const Contact = () => {
   return (
     <section id="contact-section" className="contact">
       <div className="contact-container">
-        <h2>Contacto</h2>
-        <p>¡Me encantaría saber de ti! Llena el formulario y me pondré en contacto contigo.</p>
+        <h2>Contact</h2>
+        <p> 
+        I'd love to hear from you! Fill out the form and I will contact you.</p>
         <form onSubmit={handleSubmit} className="contact-form">
           <input
             type="text"
             name="name"
-            placeholder="Tu nombre"
+            placeholder="Your name"
             value={formData.name}
             onChange={handleChange}
             required
@@ -40,7 +41,7 @@ const Contact = () => {
           <input
             type="email"
             name="email"
-            placeholder="Tu correo electrónico"
+            placeholder="Your email"
             value={formData.email}
             onChange={handleChange}
             required
@@ -48,19 +49,19 @@ const Contact = () => {
           <input
             type="text"
             name="subject"
-            placeholder="Asunto"
+            placeholder="Subject"
             value={formData.subject}
             onChange={handleChange}
             required
           />
           <textarea
             name="message"
-            placeholder="Tu mensaje"
+            placeholder="Your message"
             value={formData.message}
             onChange={handleChange}
             required
           />
-          <button type="submit">Enviar</button>
+          <button type="submit">Send</button>
         </form>
       </div>
     </section>

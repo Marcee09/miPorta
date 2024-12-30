@@ -16,6 +16,7 @@
     font-size: 2.5rem; 
     color: #333;
     margin-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
   }
   
@@ -178,10 +179,16 @@
       flex-direction: column;
       align-items: center;
     }
-  
+    .about-title{
+      font-size: 1.7rem;
+    }
     .about-photo {
       flex: 0 0 auto;
       margin-bottom: 20px;
+    }
+
+    .section h3{
+        font-size: 1.2rem;
     }
   
     .about-container {
